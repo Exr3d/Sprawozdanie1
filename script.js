@@ -23,13 +23,115 @@ const buttonsArray =[one, two, three, four, five, six, seven, eight, nine, zero]
 
 function oneClick(){
     
-    var displayNumber = parseInt(document.getElementById("calc_display").value);
-    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
     if(displayNumber == 0){
         document.getElementById("calc_display").innerHTML = "1";
-        window.alert('1');
+
     }else{
         document.getElementById("calc_display").innerHTML += "1";
-        window.alert('2');
     } 
+}
+function twoClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "2";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "2";
+    } 
+}
+function threeClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "3";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "3";
+    } 
+}
+function fourClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "4";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "4";
+    } 
+}
+function fiveClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "5";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "5";
+    } 
+}
+function sixClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "6";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "6";
+    } 
+}
+function sevenClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "7";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "7";
+    } 
+}
+function eightClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "8";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "8";
+    } 
+}
+function nineClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "9";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "9";
+    } 
+}
+function zeroClick(){
+    
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    if(displayNumber == 0){
+        document.getElementById("calc_display").innerHTML = "0";
+
+    }else{
+        document.getElementById("calc_display").innerHTML += "0";
+    } 
+}
+
+function Clear(){
+    document.getElementById("calc_display").innerHTML = "0";
 }
