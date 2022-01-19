@@ -135,3 +135,10 @@ function zeroClick(){
 function Clear(){
     document.getElementById("calc_display").innerHTML = "0";
 }
+
+function Dot(){
+    var displayNumber = document.getElementById("calc_display").textContent;
+    if(document.getElementById("calc_display").textContent != '.' && !displayNumber.includes('.')){
+        document.getElementById("calc_display").innerHTML += ".";
+    }
+}
