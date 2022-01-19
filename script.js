@@ -142,3 +142,67 @@ function Dot(){
         document.getElementById("calc_display").innerHTML += ".";
     }
 }
+function Plus(){
+    ifCanGo = new Boolean(false);
+    var Operators = ['+', '-', '*', '/'];
+    var displayNumber = document.getElementById("calc_display").textContent;
+    
+        if(document.getElementById("calc_display").textContent != '+' && !displayNumber.includes(Operators[0]) 
+        && !displayNumber.includes(Operators[1]) && !displayNumber.includes(Operators[2]) 
+        && !displayNumber.includes(Operators[3])){
+           ifCanGo = true;
+    }else{
+        ifCanGo = false;
+    }
+    if(ifCanGo){
+        document.getElementById("calc_display").innerHTML += "+";
+    }
+}
+function Minus(){
+    ifCanGo = new Boolean(false);
+    var Operators = ['+', '-', '*', '/'];
+    var displayNumber = document.getElementById("calc_display").textContent;
+    
+        if(document.getElementById("calc_display").textContent != '+' && !displayNumber.includes(Operators[0]) 
+        && !displayNumber.includes(Operators[1]) && !displayNumber.includes(Operators[2]) 
+        && !displayNumber.includes(Operators[3])){
+           ifCanGo = true;
+    }else{
+        ifCanGo = false;
+    }
+    if(ifCanGo){
+        document.getElementById("calc_display").innerHTML += "-";
+    }  
+}
+function Increase(){
+    ifCanGo = new Boolean(false);
+    var Operators = ['+', '-', '*', '/'];
+    var displayNumber = document.getElementById("calc_display").textContent;
+    
+        if(document.getElementById("calc_display").textContent != '+' && !displayNumber.includes(Operators[0]) 
+        && !displayNumber.includes(Operators[1]) && !displayNumber.includes(Operators[2]) 
+        && !displayNumber.includes(Operators[3])){
+           ifCanGo = true;
+    }else{
+        ifCanGo = false;
+    }
+    if(ifCanGo){
+        document.getElementById("calc_display").innerHTML += "*";
+    }  
+}
+function Split(){
+    ifCanGo = new Boolean(false);
+    var Operators = ['+', '-', '*', '/'];
+    var displayNumber = document.getElementById("calc_display").textContent;
+    
+        if(document.getElementById("calc_display").textContent != '+' && !displayNumber.includes(Operators[0]) 
+        && !displayNumber.includes(Operators[1]) && !displayNumber.includes(Operators[2]) 
+        && !displayNumber.includes(Operators[3])){
+           ifCanGo = true;
+    }else{
+        ifCanGo = false;
+    }
+    if(ifCanGo){
+        document.getElementById("calc_display").innerHTML += "/";
+    }  
+}
