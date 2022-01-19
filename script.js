@@ -206,3 +206,8 @@ function Split(){
         document.getElementById("calc_display").innerHTML += "/";
     }  
 }
+function Delete(){
+    var displayNumber = document.getElementById("calc_display").textContent;
+
+    document.getElementById("calc_display").innerHTML = displayNumber.slice(0, -1);
+}
