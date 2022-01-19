@@ -211,3 +211,32 @@ function Delete(){
 
     document.getElementById("calc_display").innerHTML = displayNumber.slice(0, -1);
 }
+function Equals(){
+    var Operators = ['+', '-', '*', '/'];
+    var displayNumber = document.getElementById("calc_display").textContent;
+    var iOperators = 0;
+    var ActuallyOperator;
+    while(iOperators < 4){
+        if(displayNumber.includes(Operators[iOperators])){
+            ActuallyOperator = Operators[iOperators];
+        }
+        iOperators++;
+    }
+
+    const [number1, number2] = displayNumber.split(ActuallyOperator);
+    
+    var Number1 = parseFloat(number1);
+    var Number2 = parseFloat(number2);
+
+    if(ActuallyOperator=='+'){
+        document.getElementById("calc_display").innerHTML = Number1 + Number2;
+    }else if(ActuallyOperator=='-'){
+        document.getElementById("calc_display").innerHTML = Number1 - Number2;
+    }else if(ActuallyOperator=='*'){
+        document.getElementById("calc_display").innerHTML = Number1 * Number2;
+    }else if(Number2 == 0 && ActuallyOperator=='/'){
+        window.alert("Nie dziel przez 0");
+    }else if(ActuallyOperator=='/'){
+        document.getElementById("calc_display").innerHTML = Number1 / Number2;
+    }
+}
